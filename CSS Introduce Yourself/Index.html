@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+      margin:0;
+    }
+
+/* style for the header */
+.header{
+  background-color: #fcba03;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Style the top navigation*/
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+
+}
+/*style the topnav links*/
+.topnav a{
+  float: left;
+  display:block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*change color on movement with hover*/
+.topnav a:hover{
+  background-color: #f11215;
+  color: black;
+}
+
+/*left and right column*/
+.column.side{
+  float: left;
+  width: 33.3%;
+}
+
+/*Middle column*/
+.column.middle{
+  width:50%;
+}
+
+/*Clear Floats after the columns*/
+.row:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+
+/*Responsive layout for three columns*/
+@media screen and (max-width: 600px){
+  .column.side, .column.middle {
+    width:100%
+  }
+}
+
+/*style for the footer*/
+.footer{
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class = "header">
+    <h1>About Bailey Haskell</h1>
+  </div>
+
+  <div class = "topnav">
+    <a href="Index.html">Home</a>
+    <a href="2nd Page.html">Traditions</a>
+    <a href="3rd Page.html">Goals</a>
+    <a href="4th Page.html">Home Town</a>
+  </div>
+
+  <div class = "row">
+    <div class = "column side">
+      <h2>side</h2>
+      <p>Hello, how are you doing today?</p>
+    </div>
+
+      <div class="column side">
+        <h2>Main Content</h2>
+        <p>Say somthing</p>
+        <p>Give details</p>
+      </div>
+
+      <div class="column side">
+        <h2>Side</h2>
+        <p>More details</p>
+      </div>
+    </div>
+      <div class="footer">
+        <p>Copyright</p>
+
+      </div>
+
+      <p>My name is Bailey Haskell. I like to do many things like roping,
+      playing sports, and trying new things
+      </p>
+      <h2>Here is a picture of <b>me</b> roping</h2>
+      <img src="image3.jpeg"
+      alt="me roping" style width = "1170" height="669">
+
+<h3>click the link below to learn where I'm from!</h3>
+
+      <p><a href="2nd Page.html">Where I'm From!</a>
+
+
+  </body>
+</html>
