@@ -8,7 +8,8 @@
         box-sizing: border-box;
     }
     body{
-      margin:0;
+      margin: 0;
+      background-color: #b39f91;
     }
 
 /* style for the header */
@@ -43,12 +44,11 @@
 /*left and right column*/
 .column.side{
   float: left;
-  width: 33.3%;
-}
-
-/*Middle column*/
-.column.middle{
-  width:50%;
+  width: 30%;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /*Clear Floats after the columns*/
@@ -67,9 +67,16 @@
 
 /*style for the footer*/
 .footer{
-  background-color: #f1f1f1;
+  color: #e3dad3;
+  background-color: #0f0b08;
   padding: 10px;
   text-align: center;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: 550px;
+  width: 50%
 }
     </style>
   </head>
@@ -83,44 +90,48 @@
 
   <div class = "topnav">
     <a href="Index.html">Home</a>
-    <a href="2nd Page.html">Traditions</a>
-    <a href="3rd Page.html">Goals</a>
-    <a href="4th Page.html">Home Town</a>
+    <a href="2nd Page.html">Home Town</a>
+    <a href="3rd Page.html">Traditions</a>
+    <a href="4th Page.html">Goals</a>
   </div>
 
   <div class = "row">
     <div class = "column side">
-      <h2>side</h2>
-      <p>Hello, how are you doing today?</p>
+      <h2>Who am I?</h2>
+      <p>I like to do many things like roping, playing sports,
+        and trying new things. I served a mission in Buenos Aires,
+        Argentina and Baltimore, Maryland. I am also the youngest of 3 siblings.
+      I have an older sister and brother.
+     </p>
     </div>
 
       <div class="column side">
-        <h2>Main Content</h2>
-        <p>Say somthing</p>
-        <p>Give details</p>
+        <h2>Cool facts about me are....</h2>
+        <ul>
+          <li>I like to play basketball.</li>
+          <li>I went to the same highschool as Patrick Mahomes.</li>
+          <li>I can juggle.</li>
+        </ul>
+        <h2>Here is a picture of me roping</h2>
       </div>
 
       <div class="column side">
-        <h2>Side</h2>
-        <p>More details</p>
+        <h2>Reason for coming to Ensign</h2>
+        <p>I came to Ensign college because it was a nice cheap option to get an education in Computer Science.
+          I really like how it is a college centered on Christ and how they teach us to become better disciples of him. </p>
       </div>
     </div>
+    <div class="center">
+    <img src="image3.jpeg" alt="me roping" style width = "900" height="600">
+</div>
+
+<div class="center">
+  <h3>click the link below to learn where I'm from!</h3>
+    <h1><a href="2nd Page.html">Where I'm From!</a>
+</div>
+
       <div class="footer">
-        <p>Copyright</p>
-
+        <h3>Copyright</h3>
       </div>
-
-      <p>My name is Bailey Haskell. I like to do many things like roping,
-      playing sports, and trying new things
-      </p>
-      <h2>Here is a picture of <b>me</b> roping</h2>
-      <img src="image3.jpeg"
-      alt="me roping" style width = "1170" height="669">
-
-<h3>click the link below to learn where I'm from!</h3>
-
-      <p><a href="2nd Page.html">Where I'm From!</a>
-
-
   </body>
 </html>
