@@ -2,9 +2,146 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+    <title>Home Town</title>
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+      background-color: #877f7a;
+    }
+    /* style for the header */
+    .header {
+      background-color:#d9baa5;
+      color:#0a0501;
+      padding: 1px;
+      text-align: center;
+      font-family: cursive;
+      font-size: 30px;
+    }
+    /*Style the top navigation*/
+    .topnav {
+      overflow: hidden;
+      background-color: #261c15;
 
+    }
+    /*style the topnav links*/
+    .topnav a{
+      float: left;
+      display:block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /*change color on movement with hover*/
+    .topnav a:hover{
+      background-color: #f11215;
+      color: black;
+    }
+
+    /*left and right column*/
+    .column.side{
+      float: left;
+      width: 30%;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    /*Clear Floats after the columns*/
+    .row:after{
+      content:"";
+      display:table;
+      clear:both;
+    }
+
+    /*Responsive layout for three columns*/
+    @media screen and (max-width: 600px){
+      .column.side, .column.middle {
+        width:300%
+      }
+    }
+    /*style for the footer*/
+    .footer{
+      background-color: #f1f1f1;
+      padding: 10px;
+      text-align: center;
+    }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%
+    }
+    table {
+      width: 100
+
+    }
+    th{
+      height: 70px
+    }
+    }
+    .animation {
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: relative;
+      animation-name: example;
+      animation-duration: 5s;
+    }
+    @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:100px; top:0px;}
+  50%  {background-color:blue; left:100px; top:100px;}
+  75%  {background-color:green; left:0px; top:100px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+    </style>
+  </head>
+  <div class="header">
+    <h1>Goals</h1>
+  </div>
+  <body>
+    <div class = "topnav">
+      <a href="Index.html">Home</a>
+      <a href="2nd Page.html">Home Town</a>
+      <a href="3rd Page.html">Traditions</a>
+      <a href="4th Page.html">Goals</a>
+    </div>
+
+<div class="center">
+
+
+    <table>
+      <tr>
+        <th>Goals for this week</th>
+        <th>Goals for this month</th>
+        <th>Goals for this year</th>
+      </tr>
+      <tr>
+        <td>Finish all my homework</td>
+        <td>Learn how to style better in CSS</td>
+        <td>Lose 20lbs</td>
+      </tr>
+      <tr>
+        <td>Study for tests in school</td>
+        <td>Apply for internships for the summer</td>
+        <td>Learn and be comfortable with HTML, CSS, and JavaScript</td>
+      </tr>
+      <tr>
+        <td>Read a talk by president Nelson</td>
+        <td>Read to 3 Nephi this week</td>
+        <td>Have an internship this summer</td>
+      </tr>
+    </table>
+</div>
+<div class="footer">
+  <h3>Copyright</h3>
+</div>
   </body>
 </html>

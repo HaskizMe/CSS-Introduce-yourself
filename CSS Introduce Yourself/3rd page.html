@@ -7,13 +7,13 @@
         box-sizing: border-box;
     }
     body{
-      background-color:#4d4845; 
+      background-color:#c74646;
       margin:0;
     }
 
 /* style for the header */
 .header{
-  background-color: #fcba03;
+  background-color: #112d40;
   padding: 20px;
   text-align: center;
 }
@@ -43,12 +43,16 @@
 /*left and right column*/
 .column.side{
   float: left;
-  width: 28%;
+  width: 30%;
 }
 
 /*Middle column*/
 .column.middle{
-  width:50%;
+  width: 200px;
+  border: 3px solid #2d2d2d;
+  display: grid;
+  justify-content: left;
+  align-content: left;
 }
 
 /*Clear Floats after the columns*/
@@ -64,6 +68,10 @@
     width:100%
   }
 }
+.center{
+  text-align: center;
+}
+
 
 /*style for the footer*/
 .footer{
@@ -74,7 +82,38 @@
 </style>
   </head>
   <body>
-    <h2>Some of our country's traditions in the United States are: Thanksgiving, 4th of July, and</h2>
+    <div class="header">
+      <h1 style="color:white;">Traditions</h1>
+    </div>
+    <div class = "topnav">
+      <a href="Index.html">Home</a>
+      <a href="2nd Page.html">Home Town</a>
+      <a href="3rd Page.html">Traditions</a>
+      <a href="4th Page.html">Goals</a>
+    </div>
+    <div class="center">
+      <h1>Some of our country's traditions in the United States are: Thanksgiving, <br>4th of July, and Christmas.</h2>
+
+    </div>
+
+    <div class="row">
+    <div class="column side">
+      <h3>4th of July is celebrated to remember the passage<br> of the Declaration of Independence by the<br> Continental Congress on July 4, 1776. </h3>
+      <img src="Fireworks.jpg" alt="fireworks" style width="400" height="300">
+    </div>
+    <div class="column side">
+      <h3>Thanksgiving is November 24th. It is a time we meet with family and have a big feast to celebrate a good "harvest." </h2>
+      <img src="thanksgiving.jpg" alt="thanksgiving" style width="400" height="300">
+  </div>
+    <div class="column side">
+      <h3>Christmas is celebrated on Decemeber 25th. It is celebrated to remember the birth of Jesus Christ.</h3>
+      <img src="Chistmas.jpg" alt="Christmas" style width="500" height="300">
+
+    </div>
+    </div>
+    <div class="footer">
+      <h3>Copyright</h3>
+    </div>
   </body>
   <p></p>
 </html>
