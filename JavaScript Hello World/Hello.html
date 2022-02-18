@@ -3,12 +3,40 @@
   <head>
     <meta charset="utf-8">
     <title>Hello</title>
+
+    <style>
+    body{
+      background-color:#42b6f5
+    }
+    .button {
+      background-color: #a142f5;
+      centered;
+      padding: 15px 32px;
+      font-size: 20px;
+      border-radius: 8px
+    }
+    .header{
+      background-color: #aaf542;
+      padding: 20px;
+      text-align: center;
+    }
+
+    </style>
   </head>
   <body>
-      <p>This is my hello world program</p>
+    <div class="header">
+      <h2>Hello World</h2>
 
+    </div>
+      <div class="button">
+        <button onclick="myFunc()">Click Me!</button>
+
+      </div>
     <script>
-      alert("Hello World! It is great to see you today!");
+        function myFunc(){
+          alert("You must of clicked the button! I am proud of you!");
+        }
+      alert("Welcome to my Hello world webpage!");
     </script>
   </body>
 </html>
